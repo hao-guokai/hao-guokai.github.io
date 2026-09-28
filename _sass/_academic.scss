@@ -1,0 +1,492 @@
+/* Academic homepage overrides for Not Pure Poole */
+
+:root {
+  --academic-blue: #003d73;
+  --academic-text: #4d4d4d;
+  --academic-muted: #777;
+  --academic-border: #e7e7e7;
+  --body-bg: #fff;
+  --body-color: var(--academic-text);
+  --heading-color: var(--academic-blue);
+  --link-color: #0067b1;
+  --link-hover-color: #00497f;
+  --body-font-size: 15px;
+  --body-line-height: 1.55;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #fff;
+    --body-color: var(--academic-text);
+    --heading-color: var(--academic-blue);
+    --link-color: #0067b1;
+    --link-hover-color: #00497f;
+    --border-color: #e7e7e7;
+  }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: #fff;
+  color: var(--academic-text);
+  font-family: Georgia, "Times New Roman", "Noto Serif", "Microsoft YaHei", serif;
+}
+
+.academic-container {
+  min-height: 100vh;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.sidebar-left {
+  background-image: none !important;
+  background: #fff !important;
+  color: var(--academic-text) !important;
+  border-right: 0;
+}
+
+.academic-masthead {
+  color: var(--academic-text);
+  padding-top: 0.5rem;
+}
+
+.avatar-image {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  margin: 0 auto 2.4rem;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.masthead-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  line-height: 1.25;
+  color: var(--academic-blue);
+  margin-bottom: .55rem;
+}
+
+.masthead-title a { color: var(--academic-blue); }
+
+.academic-role,
+.academic-affiliation,
+.academic-location,
+.academic-email,
+.academic-wechat {
+  font-size: .88rem;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: .18rem;
+}
+
+.academic-affiliation {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.academic-location { font-style: italic; }
+.academic-email a { color: #666; text-decoration: none; }
+
+.academic-navigation { margin-top: 1.5rem; }
+.navigation-list { margin-top: 0; }
+.navigation-item { display: inline-block; margin: 0 .45rem .4rem; }
+.navigation-item a {
+  border: 0;
+  color: var(--academic-blue);
+  font-size: .77rem;
+  letter-spacing: 0;
+}
+
+.academic-social { margin-top: 1.1rem; font-size: 1.15rem; }
+.social-icon { color: var(--academic-blue) !important; padding: .6rem .55rem; }
+
+.academic-content {
+  min-height: 100vh;
+  margin-left: 25%;
+  padding: 2.25rem 3.2rem 3rem;
+  max-width: 930px;
+}
+
+.academic-section { margin-bottom: 2rem; }
+.academic-section h2 {
+  margin: 0 0 .65rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--academic-blue);
+  font-size: 1.45rem;
+  letter-spacing: 0;
+}
+.academic-section p { margin-bottom: .55rem; }
+
+.research-interest-list { margin: .2rem 0 0 1.35rem; }
+.research-interest-list li { margin: .25rem 0; }
+
+.publication-list {
+  margin-top: .8rem;
+  border-top: 1px solid var(--academic-border);
+}
+.publication-item {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 1rem;
+  padding: .9rem 0;
+  border-bottom: 1px solid var(--academic-border);
+}
+.publication-year {
+  color: #888;
+  font-size: .82rem;
+  padding-top: .08rem;
+}
+.publication-main h3 {
+  margin: 0 0 .18rem;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", sans-serif;
+  font-size: .92rem;
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+.publication-main h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication-main h3 a:hover {
+  color: #005b9f;
+  text-decoration: underline;
+}
+.publication-authors,
+.publication-venue {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, "Microsoft YaHei", sans-serif;
+  font-size: .8rem;
+  color: #666;
+  line-height: 1.45;
+}
+.publication-venue { color: #777; font-style: italic; }
+.publication-links { margin-top: .4rem; }
+.publication-links a {
+  display: inline-block;
+  margin: 0 .28rem .15rem 0;
+  padding: .12rem .42rem;
+  border: 1px solid #cbd5df;
+  border-radius: 4px;
+  color: #005b9f;
+  background: #fbfcfd;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  font-size: .72rem;
+  text-decoration: none;
+}
+.publication-links a:hover { background: #f0f5fa; }
+
+.overview-heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.original-pdf-link { font-size: .8rem; white-space: nowrap; }
+.overview-description { color: #777; margin-bottom: 1.05rem !important; }
+
+.pdf-pages { width: 100%; }
+.pdf-page {
+  width: 100%;
+  margin: 0 0 1.25rem;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.055);
+}
+.pdf-page canvas { display: block; width: 100%; height: auto; }
+.pdf-status {
+  padding: 1rem;
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+  color: #777;
+  font-size: .85rem;
+}
+
+.academic-footer {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  color: #999;
+  font-size: .72rem;
+}
+
+@media (max-width: $md-width) {
+  .sidebar-left {
+    height: auto;
+    position: static;
+    padding-top: 1.8rem;
+    padding-bottom: .6rem;
+  }
+  .avatar-image { width: 112px; height: 112px; margin-bottom: 1rem; }
+  .academic-content {
+    width: 100%;
+    margin-left: 0;
+    padding: 1.3rem 1.4rem 2.5rem;
+    max-width: none;
+  }
+  .academic-navigation { margin-top: 1rem; }
+}
+
+@media (max-width: $sm-width) {
+  .overview-heading-row { display: block; }
+  .original-pdf-link { display: inline-block; margin-top: .2rem; }
+  .publication-item { grid-template-columns: 1fr; gap: .2rem; }
+  .publication-year { font-weight: 700; }
+}
+
+
+
+/* ============================================================
+   Sidebar in-page navigation
+   ============================================================ */
+
+.academic-navigation {
+  margin: 1.4rem 0 1.2rem;
+}
+
+.academic-navigation::before {
+  content: "页内导航";
+  display: block;
+  margin-bottom: .45rem;
+  color: #777;
+  font-size: .82rem;
+  letter-spacing: .06em;
+}
+
+.academic-navigation .navigation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.academic-navigation .navigation-item {
+  margin: 0;
+}
+
+.academic-navigation .navigation-item a {
+  display: inline-block;
+  padding: .18rem .45rem;
+  color: #005b8f;
+  font-size: .88rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color .15s ease, color .15s ease;
+}
+
+.academic-navigation .navigation-item a:hover {
+  color: #003f66;
+  background: rgba(0, 91, 143, .07);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* ============================================================
+   Honors and Awards
+   ============================================================ */
+
+.honors-container {
+  margin-top: .7rem;
+}
+
+.honors-category {
+  margin-bottom: 1.6rem;
+}
+
+.honors-category-title {
+  margin: 0 0 .55rem;
+  padding-bottom: .3rem;
+  border-bottom: 1px solid #e5e5e5;
+  color: #00558c;
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Arial, "Microsoft YaHei", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.honors-group-title {
+  margin: .8rem 0 .25rem 5.5rem;
+  color: #666;
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Arial, "Microsoft YaHei", sans-serif;
+  font-size: .88rem;
+  font-weight: 600;
+}
+
+.honors-list {
+  margin: 0;
+}
+
+.honor-item {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  gap: .8rem;
+  padding: .45rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.honor-year {
+  color: #888;
+  font-size: .84rem;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
+.honor-content {
+  min-width: 0;
+  line-height: 1.55;
+}
+
+.honor-title {
+  color: #333;
+  font-size: .88rem;
+  font-weight: 500;
+}
+
+.honor-award {
+  display: inline-block;
+  margin-left: .35rem;
+  padding: .02rem .35rem;
+  border: 1px solid #b9d4e5;
+  border-radius: 3px;
+  background: #f4f9fc;
+  color: #005b8f;
+  font-size: .72rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* Mobile */
+@media (max-width: $sm-width) {
+  .honor-item {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: .5rem;
+  }
+
+  .honors-group-title {
+    margin-left: 0;
+  }
+
+  .honor-title {
+    font-size: .86rem;
+  }
+}
+/* 最后一条荣誉不显示底部分隔线 */
+.honors-category:last-child .honors-list:last-child .honor-item:last-child {
+  border-bottom: none;
+}
+
+/* 最后一个荣誉分类不要留下额外底部间距 */
+.honors-category:last-child {
+  margin-bottom: 0;
+}
+
+/* 荣誉获奖作为页面最后一个 section，缩小与 footer 的间距 */
+.honors-section {
+  margin-bottom: 1rem;
+}
+
+
+/* ============================================================
+   Featured Research Overview
+   ============================================================ */
+
+.overview-feature-card {
+  display: block;
+  margin: 1.1rem 0 1.8rem;
+  padding: .85rem 1rem;
+  border: 1px solid #d7e4ec;
+  border-left: 4px solid #005b8f;
+  border-radius: 5px;
+  background: #f8fbfd;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color .15s ease,
+              border-color .15s ease,
+              transform .15s ease;
+}
+
+.overview-feature-card:hover {
+  background: #f2f8fb;
+  border-color: #b8d3e3;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.overview-feature-label {
+  margin-bottom: .3rem;
+  color: #005b8f;
+  font-size: .74rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+}
+
+.overview-feature-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.overview-feature-text {
+  min-width: 0;
+}
+
+.overview-feature-text h3 {
+  margin: 0 0 .25rem;
+  color: #004f80;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.overview-feature-text p {
+  margin: 0;
+  color: #666;
+  font-size: .84rem;
+  line-height: 1.55;
+}
+
+.overview-feature-action {
+  flex-shrink: 0;
+  color: #005b8f;
+  font-size: .82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: $sm-width) {
+  .overview-feature-content {
+    display: block;
+  }
+
+  .overview-feature-action {
+    margin-top: .5rem;
+  }
+}
+
+
+/* ============================================================
+   Wide-screen layout fix
+   Keep the fixed sidebar aligned with the 1220px main container
+   ============================================================ */
+
+@media (min-width: 1220px) {
+  .sidebar-left {
+    width: 305px !important;
+    max-width: 305px;
+  }
+
+  .academic-content {
+    margin-left: 305px;
+    width: 915px;
+    max-width: 915px;
+  }
+}

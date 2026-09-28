@@ -1,0 +1,52 @@
+# ============================================================
+# Academic Homepage based on Not Pure Poole
+# ============================================================
+
+title: "Guokai Hao"
+description: "Ph.D. Student | Reinforcement Learning"
+url: "https://guokai-hao.github.io"
+baseurl: ""
+lang: "zh-CN"
+
+# 替换成你自己的头像文件；默认提供 profile-placeholder.png
+avatar: /WeChatProfilePicture.jpg
+
+# 学术主页采用白色侧边栏，不再使用博客背景图
+cover_bg_color: "#d6ecf0"
+cover_color: "#444444"
+
+permalink: pretty
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - .editorconfig
+  - .git
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - README_CN.md
+  - scripts/
+  - not-pure-poole.gemspec
+
+twitter:
+  card: summary
+
+social:
+  name: "Guokai Hao"
+  links:
+    - https://orcid.org/0000-0001-6409-1958
+    - https://ieeexplore.ieee.org/author/37089391665
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+author:
+  name: "Guokai Hao"
+  url: "https://guokai-hao.github.io"
+  email: "gkhaoaia@163.com"
